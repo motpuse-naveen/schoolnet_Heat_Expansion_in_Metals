@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" href="assets/jslib/normalize_5.0.css">
+   <link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <script src="assets/json/main.json"></script>
+   <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+   <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+   <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
+   <script src="assets/jslib/reSize_1.0/resize.js"></script>
+
+</head>
+
+<body>
+   <div id="bk6ch15ss2" class='conatiner' data-attr='continues' tabindex="0">
+      <script type="text/javascript">
+         (function ($) {
+            game_resize_function("#bk6ch15ss2");
+         })(jQuery);
+      </script>
+      <div id="topmenubar">
+         <div id="logo">
+            <img id="logoImg" src="assets/images/343.png">
+         </div>
+         <div id="closeBtn">
+            <div class="closeBtn1">Close</div>
+            <div class="closeImg"></div>
+         </div>
+
+      </div>
+      <div id="topmenubar2">
+         <div id="contentTittle">
+            <p class="titleName">Heat Expansion in Metals
+            </p>
+         </div>
+      </div>
+
+
+      <!-- slides -->
+      <div class="slideconatiner">
+         <div class='Slides'>
+            <div id="slide1Content">
+               <div class="standContainer">
+                  <div class="standDiv"></div>
+                  <div class="burnerDiv"></div>
+                  <div class="dragStandDiv"></div>
+                  <div class="flameDiv"></div>
+                  <div class="mettalBallPlaceholder"></div>
+               </div>
+               <div class="timerDiv">
+                  <p class="clockText">00:00</p>
+               </div>
+               <div class="resetDiv">
+                  <span class="resetText">RESET</span>
+               </div>
+               <div class="contentContainer">
+                  <div class="contentDiv"></div>
+                  <p class="ballText">Ball Diameter (cm)</p>
+                  <div class="ballDiameterDiv">
+                     <p class="ballDiameterText"></p>
+                  </div>
+                  <p class="ballText ringText">Ring Diameter (cm)</p>
+                  <div class="ballDiameterDiv ringDiameterDiv">
+                     <p class="ringDiameterText">2.00002</p>
+                  </div>
+                  <div class="mettalBall copperDiv"></div>
+                  <p class="mettalBallText copperText">Copper</p>
+                  <div class="mettalBall ironDiv"></div>
+                  <p class="mettalBallText ironText">Iron</p>
+                  <div class="mettalBall brassDiv"></div>
+                  <p class="mettalBallText brassText">Brass</p>
+                  <div class="mettalBall bronzeDiv"></div>
+                  <p class="mettalBallText bronzeText">Bronze</p>
+               </div>
+               <div class="threshold">
+                  <p class="thresholdText">
+                     <span class="span1">
+                        The ball cannot pass
+                        through the ring as it has
+                        expanded on heating.</span>
+                     <span class="span2">Switch off the bunsen
+                        burner and allow the ball
+                        to cool and try passing it
+                        through the ring again.</span>
+                  </p>
+               </div>
+               <div class="workSheetContainer">
+                  <p class="worksheetTitle">Use the worksheet provided to you, to enter readings of the experiment.</p>
+                  <div class="workSheetDiv" onclick="OpenWord()">
+                     <a id="MyLink" style="display:none"></a>
+                  </div>
+                  <input id="file-input" type="file" name="name" style="display: none;" />
+                  <div class="workSheetContent">
+                     <p class="workSheetText">
+                        <b>Aim:</b> To verify that metals expand on<br> heating.<br><br>
+                        <b>Apparatus</b><br> Ring and Ball apparatus<br><br>
+                        Metal balls of same diameter but<br> different material, such as iron, copper,<br> brass, bronze
+                        etc.<br><br>
+                        Ring with a internal diameter slightly<br> larger than the diameter of the metal<br>
+                        balls<br><br>
+                        Bunsen burner<br><br>
+                        <b>Procedure</b><br> Select a metal ball and attach it to the<br> chain of the 'ring & ball'
+                        apparatus.<br><br>
+                        Move the ball through the ring to check<br> that it snugly passes through the ring.<br><br>Heat
+                        the ball using a Bunsen burner.<br><br>
+                        Start the timer when you start heating<br> the metal ball.<br><br>
+                        Periodically check whether the ball<br> passes through the ring.<br><br>
+                        Note the time when the ball has<br> expanded more than the ring and will<br> not pass through
+                        it.<br><br>
+                        Stop heating by switching off the<br> Bunsen burner.<br><br>
+                        Allow the ball to cool and while it cools,<br> periodically check if the ball passes<br> through
+                        the
+                        ring.<br><br>
+                        Repeat the experiment with a ball of<br> different metal and note down the time<br> for
+                        expansion
+                        greater than the ring<br> diameter.
+                        <br>
+                        <br>
+                        <br>
+                     </p>
+
+                  </div>
+                  <p class="copyRight">© 2019, Schoolnet India Limited</p>
+               </div>
+               <div class="procedureDiv">
+                  <img class="procdClick" src="assets/images/procdClick.png">
+                  <img class="procdAnim" src="assets/images/procedure.gif" />
+                  <div class="mainProcdiv">
+                     <span class="procdNum">1)</span>
+                     <div class="prevProcd"></div>
+                     <div class="nextProcd"></div>
+                     <img class="showObj" src="assets/images/showObjM.gif" />
+                     <span class="showObjTxt">Show Object</span>
+                     <img class="closeProcd closeProcdBefore" src="assets/images/closeUp.png" />
+                     <span class="closeProcdTxt">CLOSE</span>
+                     <div class="procedSteps procedSteps1">
+                        <p>Select the metal ball to be heated by<br> clicking it from the options given below. Prior to
+                           heating, you can replace the selected ball by clicking on the alternative.</p>
+                     </div>
+                     <div class="procedSteps procedSteps2">
+                        <p>Heat the metal ball using the Bunsen burner. Click the Bunsen burner to switch it on.</p>
+                     </div>
+                     <div class="procedSteps procedSteps3">
+                        <br>As the ball is being heated, it will start expanding. Test the expansion by passing the ring
+                        over the ball. Move the ring up or down by clicking the handle of the ring and keeping the mouse
+                        button pressed.</p>
+                     </div>
+                     <div class="procedSteps procedSteps4">
+                        <p>As the metal ball expands, the ring will stop passing over it. When this happens, note the
+                           time and switch off the Bunsen burner by clicking on it.</p>
+                     </div>
+                     <div class="procedSteps procedSteps5">
+                        <p>As the metal ball cools, it will start contracting. Again check if the ring can pass over the
+                           ball by moving the ring handle up and down.</p>
+                     </div>
+                     <div class="procedSteps procedSteps6">
+                        <p>Click RESET and repeat the experiment with a different ball.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="downmenubar">
+            <!-- <p class="copyRight">© 2019, Schoolnet India Limited</p> -->
+         </div>
+      </div>
+      <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,706 @@
+/*global css starts*/
+
+* {
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Trebuchet';
+  src:local('fonts/11_Trebuchet MS.ttf'),
+    url('fonts/11_Trebuchet MS.ttf');
+  }
+
+  @font-face {
+  font-family: 'Trebuchet1';
+  src:local('fonts/trebuc.woff'),
+    url('fonts/trebuc.woff');
+  }
+
+  @font-face {
+    font-family: 'ArialBold';
+    src:local('fonts/6_Arial.ttf'),
+      url('fonts/6_Arial.ttf'); 
+  }
+
+  @font-face {
+    font-family: 'TrebuchetBold';
+    src:local('fonts/9_Trebuchet MS.ttf'),
+      url('fonts/9_Trebuchet MS.ttf'); 
+  }
+
+  @font-face {
+    font-family: 'Digital';
+    src:local('fonts/198_Digital Readout ExpUpright.ttf'),
+      url('fonts/198_Digital Readout ExpUpright.ttf'); 
+  }
+
+
+html, body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d0cccc;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: auto;
+  font-family:sans-serif;
+overflow:hidden;
+
+}
+
+
+/*global css ends*/
+
+#bk6ch15ss2 {
+  position: absolute;
+  width: 996px;
+  height: 680px;
+  /* background: url('../images/89.png'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background: white;
+}
+
+#topmenubar {
+ position: absolute;
+ width: 100%;
+ height: 40px;
+ background: url(../images/1338.png);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ left: 0;
+ top: 0;
+ z-index: 100;
+}
+
+#logo{
+  position: absolute;
+  width: 108px;
+  height: 18px;
+  padding: 5px;
+  top: 6px;
+  right: 39px;
+  background: white;
+}
+
+#logoImg{
+position: absolute;
+width: 91%;
+/* height: 100%; */
+}
+
+#closeBtn{
+  position: absolute;
+  width: 30px;
+  height: 37px;
+  left: 962px;
+  cursor: pointer;
+}
+
+.closeBtn1{
+  position: absolute;
+  top: 28px;
+  left: 1px;
+  color: white;
+  font-size: 10px;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+.closeImg{
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  top: 2px;
+  left: 2px;
+  background: url(../images/closeB.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeImg{
+  background: url(../images/closeA.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#closeBtn:hover .closeBtn1{
+  color: red;
+}
+
+#topmenubar2 {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  /* background: url(../images/3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  left: 0;
+  top: 40px;
+  z-index: 100;
+  /* box-shadow: 0 8px 6px -7px #939191; */
+}
+
+#contentTittle{
+  position: absolute;
+    width: 65%;
+    height: 100%;
+}
+
+.titleName{
+  position: absolute;
+  top: -12px;
+  left: 7px;
+  font-size: 18px;
+  font-family: Arial;
+  letter-spacing: 0.7px;
+  color: #000033;
+  font-weight: bold;
+}
+
+#downmenubar {
+  position: absolute;
+  width: 100%;
+  height: 31px;
+  bottom: 0px;
+  left: 0;
+  z-index: 200;
+  background: #ccc;
+}
+
+.copyRight{
+  position: absolute;
+  bottom: 9px;
+  font-family: Arial;
+  font-size: 12px;
+  right: 5px;
+}
+
+.Slides {
+  position: absolute;
+  width: 996px;
+  height: 650px;
+  display:none;
+}
+
+.activeslide{
+  height:15px;
+  width:15px;
+  display:inline-block;
+  margin:2px;
+  background:url('../images/dot_hover.png');
+  background-size:100% 100%;
+}
+
+#slide1Content{
+  width: 99.7%;
+  height: 89%;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+
+
+.standContainer{
+  position: absolute;
+  width: 222px;
+  height: 350px;
+  top: 52px;
+  left: 259px;
+}
+
+.standDiv{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: url(../images/stand.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.burnerDiv{
+  position: absolute;
+  width: 68px;
+  height: 104px;
+  bottom: 0px;
+  left: 4px;
+  z-index: 2;
+  background: url(../images/burner.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.dragStandDiv{
+  position: absolute;
+  width: 202px;
+  height: 70px;
+  top: 115px;
+  right: 7px;
+  z-index: 2;
+  background: url(../images/dragStand.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.flameDiv{
+  position: absolute;
+  width: 35px;
+  height: 26px;
+  top: 227px;
+  left: 15px;
+  background: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+
+.mettalBallPlaceholder{
+  position: absolute;
+  width: 51px;
+  height: 45px;
+  top: 196px;
+  left: 7px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contentContainer{
+  position: absolute;
+  width: 71%;
+  height: 173px;
+  bottom: 3px;
+  left: 10px;
+}
+
+.contentDiv{
+  position: absolute;
+  width: 100%;
+  height: 82%;
+  top: 0px;
+  left: 0px;
+  border-bottom-left-radius: 28px;
+  background: url(../images/content.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.timerDiv{
+  position: absolute;
+  width: 120px;
+  height: 69px;
+  top: 333px;
+  left: 54px;
+  background: url(../images/timer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.clockText{
+  position: absolute;
+  top: -8px;
+  font-size: 22px;
+  /* word-spacing: 14px; */
+  font-family: 'Digital';
+  /* font-weight: bold; */
+  letter-spacing: 0.7px;
+  color: #FFFF99;
+  left: 22.3px;
+}
+
+.ballText{
+  position: absolute;
+  top: 23px;
+  left: 22px;
+  font-size: 13px;
+  font-family: 'Trebuchet';
+  /* letter-spacing: 0.7px; */
+  word-spacing: 5px;
+  color: #333333;
+}
+
+.ballDiameterDiv{
+  position: absolute;
+  width: 116px;
+  height: 47px;
+  top: 18px;
+  left: 156px;
+  background: url(../images/ballDiameter.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ringText{
+  top: 83px;
+}
+
+.ringDiameterDiv{
+  top: 78px;
+}
+
+.ballDiameterText{
+  position: absolute;
+  top: -1px;
+  left: 22px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  font-family: 'Trebuchet1';
+  font-weight: bold;
+  color: #333333;
+}
+.ringDiameterText{
+  position: absolute;
+  top: -1px;
+  left: 22px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  font-family: 'Trebuchet1';
+  font-weight: bold;
+  color: #333333;
+}
+
+.mettalBall{
+  position: absolute;
+  width: 51px;
+  height: 45px;
+  top: 38px;
+  cursor: pointer;
+}
+
+.copperDiv{
+  left: 357px;
+  background: url(../images/copper.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ironDiv{
+  left: 445px;
+  background: url(../images/iron.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.brassDiv{
+  left: 530px;
+  background: url(../images/brass.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bronzeDiv{
+  left: 625px;
+  background: url(../images/bronze.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.mettalBallText{
+  position: absolute;
+  top: 80px;
+  font-size: 13px;
+  font-family: 'Trebuchet';
+  /* font-weight: bold; */
+  color: #333333;
+}
+
+.copperText{
+  left: 360px;
+}
+
+.ironText{
+  left: 459px;
+}
+
+.brassText{
+  left: 540px;
+}
+
+.bronzeText{
+  left: 630px;
+}
+
+.workSheetContainer{
+  position: absolute;
+  width: 270px;
+  height: 109%;
+  top: -31px;
+  right: -2px;
+  background-color: #F0F0F0;
+  z-index: 999;
+}
+
+.worksheetTitle{
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  font-size: 13px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #000000;
+}
+
+.workSheetDiv{
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheet.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.workSheetDiv:hover{
+  position: absolute;
+  width: 69px;
+  height: 59px;
+  top: 52px;
+  left: 101px;
+  background: url(../images/worksheethover.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.workSheetContent{
+  position: absolute;
+  width: 260px;
+  height: 456px;
+  top: 122px;
+  left: 5px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  line-height: 18px;
+}
+
+
+
+.workSheetText{
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  font-size: 13px;
+  font-family: Arial;
+  /* font-weight: bold; */
+  color: #000033;
+}
+
+b{
+  color: #000033;
+  font-weight: 800;
+}
+
+.resetDiv{
+  position: absolute;
+  width: 77px;
+  height: 29px;
+  top: 371px;
+  left: 597px;
+  background: url(../images/reset2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: none;
+}
+
+.resetText{
+  position: absolute;
+  font-family: Arial;
+  top: 9px;
+  left: 17.4px;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: bolder;
+}
+
+
+/* main css starts*/
+.threshold{
+  position: absolute;
+  width: 215px;
+  height: 282px;
+  top: 37px;
+  left: 495px;
+  background-color: #f0f0f0;
+  border: 1px solid #A0B4B0;
+  border-radius: 2px;
+  display:none;
+}
+
+.thresholdText{
+  position: absolute;
+  /* width: 196px; */
+  top: 33px;
+  left: 21px;
+  font-size: 13.5px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #56565a;
+  line-height: 20px;
+}
+
+.thresholdText > .span1{
+  position: absolute;
+  width: 172px;
+  text-align: justify;
+  text-align-last: left;
+}
+.thresholdText > .span2{
+  position: absolute;
+  width: 172px;
+  top: 80px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.procedureDiv {
+  position: absolute;
+  width: 265px;
+  height: 164.5px;
+  top: -20px;
+  right: 277px;
+}
+.procdAnim {
+  width: 265px;
+  height: 164.5px;
+  right: 0;
+  display: none;
+}
+
+.procdNum{
+  position: absolute;
+  width: 19px;
+  height: 22px;
+  top: 31px;
+  left: 5px;
+  /* letter-spacing: 1.3px; */
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.procedSteps{
+  position: absolute;
+  width: 88%;
+  height: auto;
+  left: 23px;
+  top: 19px;
+  /* line-height: 1.3; */
+  font-family: 'Trebuchet MS';
+  font-size: 12.2px;
+  text-align: left;
+  display: none;
+}
+
+.procdClick{
+  position: absolute;
+  right: 0;
+}
+
+.mainProcdiv{
+  display: none;
+}
+
+.prevProcd {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 4px;
+  left: 4px;
+  opacity: 0.5;
+  pointer-events: none;
+  background: url(../images/procPrev.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.nextProcd {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 4px;
+  right: 4px;
+  background: url(../images/procdnext.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.showObj{
+  position: absolute;
+  width: 118px;
+  /* height: 21px; */
+  bottom: 32px;
+  left: 143px;
+}
+
+.showObjTxt{
+  position: absolute;
+    font-size: 11px;
+    bottom: 35px;
+    left: 182px;
+    font-weight: bold;
+    font-family: 'Trebuchet';
+    color: #333333;
+    pointer-events: none;
+}
+
+.closeProcdAfter{
+  position: absolute;
+  width: 22px;
+  /* height: 31px; */
+  bottom: 8px;
+  left: 46%;
+}
+.closeProcdBefore{
+  position: absolute;
+  width: 16px;
+  height: 9px;
+  bottom: 9px;
+  left: 47%;
+}
+
+.closeProcdTxt {
+  position: absolute;
+  bottom: 3px;
+  left: 44%;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'Trebuchet';
+  color: #333333;
+  pointer-events: none;
+  display: none;
+}
+
+.procedSteps1 {
+  /* word-spacing: 2px; */
+  display: block;
+}
+.procedSteps2 {
+  /* word-spacing: 3.4px; */
+}
+.procedSteps3 {
+  /* word-spacing: 1.4px; */
+  /* top: 11px; */
+}
+.procedSteps4 {
+  /* word-spacing: 2.1px; */
+}
+.procedSteps5, .procedSteps6 {
+  /* word-spacing: 2px; */
+}
+
+.hideDivs{
+  opacity: 0.3;
+}
+.showDivs{
+  opacity: 1;
+}
