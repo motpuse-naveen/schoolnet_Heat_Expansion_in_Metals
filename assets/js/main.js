@@ -179,11 +179,11 @@ let coolTimer = function () {
     }
     ballDiameter = $('.ballDiameterText').text();
     let ballDiaCool = (parseFloat(ballDiameter) - parseFloat(metalBallVal)).toFixed(6);
-    if (ballDiaCool <= 2.000020) {
-      ballDiaCool = 2.000019;
+    if (ballDiaCool <= 2.000000) {
+      ballDiaCool = 2.000000;
     }
     $('.ballDiameterText').text(ballDiaCool);
-    if (ballDiaCool > 2.000020) {
+    if (ballDiaCool > 2.00000) {
       settimerV = setTimeout(() => {
         coolTimer();
       }, 1000);
